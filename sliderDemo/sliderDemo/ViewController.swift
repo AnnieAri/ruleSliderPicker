@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let conf = ARSliderPickerConfiguration()
+        let conf = ARSliderPickerConfiguration(0,100,5)
         let pickerView = ARSliderPicker(frame: CGRect(x: 20, y: 100, width: 300, height: 100), config: conf)
         pickerView.backgroundColor = .black
         view.addSubview(pickerView)
